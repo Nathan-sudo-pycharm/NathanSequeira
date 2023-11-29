@@ -11,7 +11,7 @@ const projectsData = [
     description: "Built using HTML, Bootstrap , Javascript",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/Nathan-sudo-pycharm/NathanSequeiaResume",
     previewUrl: "/",
   },
   {
@@ -25,10 +25,20 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Webscrapper Porject",
+    title: "Webscrapper Project",
     description:
       "A realtime webscrapper app built using Next JS , Tailwind CSS",
     image: "/images/projects/3.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 4,
+    title: "A To-Do Website ",
+    description:
+      " A simple ToDo application built with Next.js and Prisma, using SQLite as the backend database. The app stores all data on the client side.",
+    image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -42,7 +52,7 @@ const projectsData = [
       "Python project: processes data, generates graphs, provides essential measurements.  ",
     image: "/images/projects/6.png",
     tag: ["All", "Python"],
-    gitUrl: "https://github.com/Nathan-sudo-pycharm/AutoStreamlitApp",
+    gitUrl: "/",
     previewUrl: "/",
   },
   {
@@ -52,8 +62,7 @@ const projectsData = [
       "Python project: A simple Python script to spam strings wherever the cursor is placed",
     image: "/images/projects/6.png",
     tag: ["All", "Python"],
-    gitUrl:
-      "https://github.com/Nathan-sudo-pycharm/python_scripts/blob/main/main.py",
+    gitUrl: "/",
     previewUrl: "/",
   },
   {
@@ -63,7 +72,7 @@ const projectsData = [
       "Chat with and query multiple PDFs using natural language for accurate responses.",
     image: "/images/projects/6.png",
     tag: ["All", "Python"],
-    gitUrl: "https://github.com/Nathan-sudo-pycharm/Pdf_reader",
+    gitUrl: "/",
     previewUrl: "/",
   },
   {
@@ -72,7 +81,16 @@ const projectsData = [
     description: "Hand Gesture Control with OpenCV and MediaPipe",
     image: "/images/projects/6.png",
     tag: ["All", "Python"],
-    gitUrl: "https://github.com/Nathan-sudo-pycharm/Pdf_reader",
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 10,
+    title: "A Virtual Mouse",
+    description: "Hand Gesture Control with OpenCV and MediaPipe",
+    image: "/images/projects/6.png",
+    tag: ["All", "Python"],
+    gitUrl: "/",
     previewUrl: "/",
   },
 ];
