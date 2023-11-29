@@ -7,8 +7,8 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "Personal Portfolio ",
+    description: "Built using HTML, Bootstrap , Javascript",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -16,8 +16,8 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Login Page UI ",
+    description: "Basic login page using HTML , CSS ,JavaScript",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -25,36 +25,10 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Webscrapper Porject",
+    description:
+      "A realtime webscrapper app built using Next JS , Tailwind CSS",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -87,6 +61,15 @@ const projectsData = [
     title: "MultiPDF Chat Assistant",
     description:
       "Chat with and query multiple PDFs using natural language for accurate responses.",
+    image: "/images/projects/6.png",
+    tag: ["All", "Python"],
+    gitUrl: "https://github.com/Nathan-sudo-pycharm/Pdf_reader",
+    previewUrl: "/",
+  },
+  {
+    id: 10,
+    title: "A Virtual Mouse",
+    description: "Hand Gesture Control with OpenCV and MediaPipe",
     image: "/images/projects/6.png",
     tag: ["All", "Python"],
     gitUrl: "https://github.com/Nathan-sudo-pycharm/Pdf_reader",
@@ -128,11 +111,11 @@ const ProjectsSection = () => {
           name="Web"
           isSelected={tag === "Web"}
         />
-        <ProjectTag
+        {/*    <ProjectTag
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
-        />
+        /> */}
         <ProjectTag
           onClick={handleTagChange}
           name="Python"
