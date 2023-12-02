@@ -12,6 +12,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@heroicons/react": "^2.0.18",
     "autoprefixer": "10.4.15",
+    "encoding": "^0.1.13",
     "framer-motion": "^10.16.1",
     "next": "^13.4.15",
     "postcss": "8.4.27",
