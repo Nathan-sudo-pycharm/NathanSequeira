@@ -1,8 +1,10 @@
 "use client";
+// Importing necessary modules
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
+// Define data for tabs
 const TAB_DATA = [
   {
     title: "Skills",
@@ -24,13 +26,12 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Schooling : Mount Carmel Central School</li>
-        <li>Pre-University: St.Aloysius PU College</li>
-        <li>Bachelor's: St.Aloysius College[Autonomous]</li>
+        <li>Schooling: Mount Carmel Central School</li>
+        <li>Pre-University: St. Aloysius PU College</li>
+        <li>Bachelor's: St. Aloysius College[Autonomous]</li>
       </ul>
     ),
   },
-
   {
     title: "Certifications",
     id: "certifications",
@@ -41,27 +42,52 @@ const TAB_DATA = [
       </ul>
     ),
   },
+  {
+    title: "Languages",
+    id: "languages",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Kannada</li>
+        <li>German [ A2 ]</li>
+      </ul>
+    ),
+  },
 ];
 
+// Define the main component
 const AboutSection = () => {
+  // State for active tab
   const [tab, setTab] = useState("skills");
+  // useTransition hook
   const [isPending, startTransition] = useTransition();
 
+  // Function to handle tab change
   const handleTabChange = (id) => {
     startTransition(() => {
       setTab(id);
     });
   };
 
+  // Render the component
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        {/* Image component with alt prop */}
+        <Image
+          src="/images/about-image.png"
+          width={500}
+          height={500}
+          alt="About Me Image"
+        />
+        {/* Content section */}
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          {/* Updated text with corrected quote */}
           <p className="text-base lg:text-lg">
             <b>
-              "Progress is doing something that is bigger than yourslef"
+              "Progress is doing something that is bigger than yourself."
               <br></br>
             </b>
             I am currently pursuing a Bachelor's Degree in Computer Applications
@@ -74,7 +100,9 @@ const AboutSection = () => {
             with mentors, I have developed a resilient skill set that allows me
             to thrive in challenging environments.
           </p>
+          {/* Tab buttons */}
           <div className="flex flex-row justify-start mt-8">
+            {/* TabButton components */}
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -96,17 +124,15 @@ const AboutSection = () => {
               {" "}
               Certifications{" "}
             </TabButton>
-            {/* 
-              For Workshops update this 
-          
-          <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+            <TabButton
+              selectTab={() => handleTabChange("languages")}
+              active={tab === "languages"}
             >
               {" "}
-              Competitions Attended{" "}
-            </TabButton> */}
+              Languages{" "}
+            </TabButton>
           </div>
+          {/* Display content based on active tab */}
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
@@ -116,4 +142,5 @@ const AboutSection = () => {
   );
 };
 
+// Export the component
 export default AboutSection;
