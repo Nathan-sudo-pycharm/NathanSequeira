@@ -77,8 +77,8 @@ const AboutSection = () => {
         {/* Image component with alt prop */}
         <Image
           src="/images/about-image.png"
-          width={300} // Adjust the width for smaller screens
-          height={300} // Adjust the height for smaller screens
+          width={500} // Adjust the width for smaller screens
+          height={500} // Adjust the height for smaller screens
           alt="About Me Image"
         />
         {/* Content section */}
