@@ -73,22 +73,24 @@ const AboutSection = () => {
   // Render the component
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="grid grid-cols-1 gap-8 items-center py-8 px-4 md:grid-cols-2 xl:gap-16 sm:py-16 xl:px-16">
         {/* Image component with alt prop */}
         <Image
           src="/images/about-image.png"
-          width={500}
-          height={500}
+          width={300} // Adjust the width for smaller screens
+          height={300} // Adjust the height for smaller screens
           alt="About Me Image"
         />
         {/* Content section */}
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
+            About Me
+          </h2>
           {/* Updated text with corrected quote */}
-          <p className="text-base lg:text-lg">
+          <p className="text-base md:text-lg">
             <b>
               "Progress is doing something that is bigger than yourself."
-              <br></br>
+              <br />
             </b>
             I am currently pursuing a Bachelor's Degree in Computer Applications
             at St. Aloysius College [Autonomous]. My primary passion is
@@ -101,7 +103,7 @@ const AboutSection = () => {
             to thrive in challenging environments.
           </p>
           {/* Tab buttons */}
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-col md:flex-row justify-start mt-8">
             {/* TabButton components */}
             <TabButton
               selectTab={() => handleTabChange("skills")}
@@ -123,13 +125,6 @@ const AboutSection = () => {
             >
               {" "}
               Certifications{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("languages")}
-              active={tab === "languages"}
-            >
-              {" "}
-              Languages{" "}
             </TabButton>
           </div>
           {/* Display content based on active tab */}
