@@ -1,5 +1,5 @@
 //import { EmailTemplate } from "../../../components/EmailTemplate";
-import { NextApiRequest, NextApiResponse } from "next";
+
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -17,6 +17,7 @@ export async function POST(req, res) {
           <h1>{subject}</h1>
           <p>Thank you for contacting us!</p>
           <p>New message submitted:</p>
+
           <p>{message}</p>
         </>
       ),
