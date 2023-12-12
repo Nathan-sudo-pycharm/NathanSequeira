@@ -92,7 +92,7 @@ const EmailSection = () => {
                 htmlFor="subject"
                 className="text-white block text-sm mb-2 font-medium"
               >
-                Subject
+                Sender's Name and Designation
               </label>
               <input
                 name="subject"
@@ -100,7 +100,7 @@ const EmailSection = () => {
                 id="subject"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
+                placeholder="I am ..."
               />
             </div>
             <div className="mb-6">
