@@ -99,30 +99,26 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
-      </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        {/*    <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        /> */}
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Python"
-          isSelected={tag === "Python"}
-        />
+      <div className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+        <h2 className="mb-4">My Projects</h2>
+        <div className="flex flex-col sm:flex-row gap-2 justify-center items-center">
+          <ProjectTag
+            onClick={handleTagChange}
+            name="All"
+            isSelected={tag === "All"}
+          />
+          <ProjectTag
+            onClick={handleTagChange}
+            name="Web"
+            isSelected={tag === "Web"}
+          />
+
+          <ProjectTag
+            onClick={handleTagChange}
+            name="Python"
+            isSelected={tag === "Python"}
+          />
+        </div>
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
