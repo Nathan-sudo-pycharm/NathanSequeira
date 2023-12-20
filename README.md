@@ -1,13 +1,15 @@
 
 # Personal Portfolio with NexJ.js
-Welcome to my personal portfolio repository! This portfolio is built using NexJ.js, a JavaScript framework for building modern web applications. The project is deployed on Vercel with a custom domain name: sequeiranathan.me. The domain is registered with Namecheap.com, and Vercel's DNS settings are configured to match Namecheap's DNS.
+Welcome to my personal portfolio repository! This portfolio is built using Next.js. The project is deployed on Vercel with a custom domain name:  http://sequeiranathan.me . The domain is registered with Namecheap.com, and Vercel's DNS settings are configured to match Namecheap's DNS.
 
 ## Technologies Used
  <li> NexJ.js: A powerful JavaScript framework for building reactive and dynamic user interfaces.
  <li> Vercel: The platform for deploying and hosting the portfolio, providing a seamless deployment experience.
  <li> Namecheap: The domain registrar that hosts the custom domain sequeiranathan.me.
  <li> Framer Motion: Used for adding smooth animations and transitions to enhance the user experience.
- <li> Tailwind CSS: A utility-first CSS framework that is used for styling the portfolio, making it visually appealing and responsive.
+ <li> Tailwind CSS: A utility-first CSS framework that is used for styling the portfolio, making it visually appealing and responsive. <br>
+
+  
 ## Getting Started
 To run this portfolio locally or make modifications, follow these steps:
 
