@@ -27,7 +27,7 @@ npm run dev
 Open your browser and navigate to http://localhost:3000 to see the portfolio in action.
 
 ## Deployment
-The portfolio is automatically deployed to Vercel whenever changes are pushed to the main branch. You can customize the deployment settings in the Vercel dashboard.
+The portfolio is automatically deployed to Vercel  [ https://vercel.com/ ] whenever changes are pushed to the main branch. You can customize the deployment settings in the Vercel dashboard.
 
 ## Custom Domain
 The portfolio is accessible at http://sequeiranathan.me thanks to the custom domain registered with Namecheap.com. The DNS settings on both Namecheap and Vercel are configured to ensure seamless domain mapping.
