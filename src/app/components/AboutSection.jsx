@@ -17,7 +17,6 @@ const TAB_DATA = [
         <li>JavaScript</li>
         <li>MySQL</li>
         <li>Python</li>
-        <li>Dart</li>
       </ul>
     ),
   },
@@ -95,8 +94,8 @@ const AboutSection = () => {
             I am currently pursuing a Bachelor's Degree in Computer Applications
             at St. Aloysius College [Autonomous]. My primary passion is
             cybersecurity, and I am adept at front-end development for web and
-            app projects, with proficiency in HTML, CSS, JavaScript, Dart,
-            MySQL, Python, and Tailwind CSS. While front-end development is my
+            app projects, with proficiency in HTML, CSS, JavaScript, MySQL,
+            Python, and Tailwind CSS. While front-end development is my
             strength, I am continually refining my skills to learn, adapt, and
             excel under diverse conditions. Through collaborative experiences
             with mentors, I have developed a resilient skill set that allows me
