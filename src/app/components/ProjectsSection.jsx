@@ -77,6 +77,16 @@ const projectsData = [
     gitUrl: "https://github.com/Nathan-sudo-pycharm/Multiplayer-game-.git",
     previewUrl: "/",
   },
+  {
+    id: 10,
+    title: "Multi-Language Invoice Summarizer",
+    description:
+      "Exploring Gemini Pro's capabilities: Built a multi-language invoice extractor",
+    image: "/images/projects/multilangincvoice.jpg",
+    tag: ["All", "Python"],
+    gitUrl: "https://github.com/Nathan-sudo-pycharm/Multilang_Invoice_Analyzer",
+    previewUrl: "/",
+  },
 ];
 
 const ProjectsSection = () => {
