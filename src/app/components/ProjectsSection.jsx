@@ -87,6 +87,17 @@ const projectsData = [
     gitUrl: "https://github.com/Nathan-sudo-pycharm/Multilang_Invoice_Analyzer",
     previewUrl: "/",
   },
+  {
+    id: 11,
+    title: "Obstacle Avoidning Robot",
+    description:
+      "Autonomous car navigates using ultrasonics, avoiding collisions intelligently.",
+    image: "/images/projects/car.jpg",
+    tag: ["All", "Robotics"],
+    gitUrl:
+      "https://github.com/Nathan-sudo-pycharm/Arduino_code/blob/main/finalobstacle.ino",
+    previewUrl: "/",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -127,6 +138,11 @@ const ProjectsSection = () => {
             onClick={handleTagChange}
             name="Python"
             isSelected={tag === "Python"}
+          />
+          <ProjectTag
+            onClick={handleTagChange}
+            name="Robotics"
+            isSelected={tag === "Robotics"}
           />
         </div>
       </div>
