@@ -1,23 +1,25 @@
-import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
-import AboutSection from "./components/AboutSection";
-import ProjectsSection from "./components/ProjectsSection";
-import EmailSection from "./components/EmailSection";
-import Footer from "./components/Footer";
-import AchievementsSection from "./components/AchievementsSection";
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212]">
-      <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4">
-        <HeroSection />
-        <AchievementsSection />
-        <AboutSection />
-        <ProjectsSection />
-        <EmailSection />
-      </div>
-      <Footer />
-    </main>
+    <div>
+      {/*
+          This example requires updating your template:
+  
+          ```
+          <html class="h-full">
+          <body class="h-full">
+          ```
+        */}
+      <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div className="text-center">
+          <p className="text-9xl  font-semibold text-indigo-600">404</p>
+          <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            Website Under Construction
+          </h1>
+          <p className="mt-6 text-base leading-7 text-gray-600">
+            Will be Back soon - Nathan Ivor Sequeira
+          </p>
+        </div>
+      </main>
+    </div>
   );
 }
